@@ -11,7 +11,7 @@ A full-stack web application that helps users learn to identify phishing emails 
 - **Leaderboard**: Compete with other users
 - **ML Analytics Pipeline**: Adaptive difficulty and personalized training
 - **Smooth Animations**: Anime.js for engaging UI transitions
-- **Responsive Design**: Modern SaaS-style UI with purple/blue gradient theme
+- **Responsive Design**: Modern SaaS-style UI with soothing gradient theme
 
 ## 📁 Project Structure
 
