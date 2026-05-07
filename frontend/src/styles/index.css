@@ -1,0 +1,82 @@
+:root {
+  --primary: #FFD3AC;     /* User requested peach */
+  --secondary: #ffb199;   /* Slightly deeper peach for gradient */
+  --accent: #FF8C69;      /* Deep Peach for readable accents */
+  --bg-color: #fffbf7;    /* Bright soothing warm white */
+  --text-main: #334155;   /* Dark slate for readable text */
+  --text-muted: #64748b;
+  --card-bg: rgba(255, 255, 255, 0.7); /* Light Glass Card */
+  --card-border: rgba(255, 211, 172, 0.4);
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: radial-gradient(circle at 15% 50%, rgba(255, 211, 172, 0.3), transparent 40%),
+              radial-gradient(circle at 85% 30%, rgba(255, 177, 153, 0.2), transparent 40%),
+              var(--bg-color);
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(255, 211, 172, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  box-shadow: 0 12px 48px rgba(255, 211, 172, 0.25);
+}
+
+.btn {
+  background: linear-gradient(135deg, var(--secondary), var(--primary));
+  border: none;
+  color: var(--text-main);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(255, 211, 172, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.85rem;
+}
+
+.btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(255, 211, 172, 0.6);
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  margin-bottom: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid var(--card-border);
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--text-main);
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(255, 211, 172, 0.4);
+  background: #ffffff;
+}
